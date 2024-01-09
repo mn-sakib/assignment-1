@@ -11,4 +11,5 @@ ageVerifier.addEventListener("click", function(){
     }else{
         showResult.innerText = "You've entered a wrong age!";
     }
+    document.getElementById("ageInput").value = "";
 });
