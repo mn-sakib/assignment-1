@@ -4,6 +4,9 @@ let ageVerifier = document.getElementById("verifyButton");
 ageVerifier.addEventListener("click", function(){
     let getValue = document.getElementById("ageInput").value;
     let showResult = document.getElementById("ageResult");
+    // Use for color removal
+    showResult.classList.remove("text-danger");
+
     if(getValue >= 18){
         showResult.innerText = "You are an Adult";
     }else if(getValue > 0){
